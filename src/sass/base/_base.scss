@@ -1,0 +1,49 @@
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .col {
+        align-self: flex-start;
+        
+        @include respond-to('medium') {
+            float: left;
+        }
+
+        > * {
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &-1third {
+            @include respond-to('large') {
+                width: 30.666%;
+
+                &:not(.col-last) {
+                    margin-right: 4%;
+                }
+            }
+        }
+
+        &-2third {
+            @include respond-to('large') {
+                width: 65.334%;
+
+                &:not(.col-last) {
+                    margin-right: 4%;
+                }
+            }
+        }
+    }
+}

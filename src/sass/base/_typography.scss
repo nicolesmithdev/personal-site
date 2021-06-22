@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
+body {
+    background-color: $white;
+    color: $default-color;
+    font: 400 #{$default-size}/#{$line-height} $default-font;
+}
+
+/*
+ * LINKS
+ */
+
+a {
+    color: $pink;
+
+    &:hover {
+        color: $default-color;
+    }
+}
+
+/*
+ * HEADINGS
+ */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $alt-font;
+	font-weight: 400;
+	line-height: $line-height;
+	margin:0 0 $padding;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+	.panel & {
+		font-size: 40px;
+		line-height: 40px;
+	}
+}
+
+/*
+ * ELEMENTS
+ */
+
+blockquote {
+    font: #{28px}/#{$line-height} $alt-font;
+    
+    cite {
+        font-family: $default-font;
+        font-size: 21px;
+
+        &:before {
+            content: "\2013";
+            margin-right: 0.5em;
+        }
+    }
+
+    p:first-of-type:before,
+    p:last-of-type:after {
+        content: "\f10d";
+        display: inline-block;
+        font-family: "Font Awesome 5 Pro";
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 900;
+        margin-right: 0.5em;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    p:last-of-type:after {
+        content: "\f10e";
+        margin-left: 0.5em;
+        margin-right: 0;
+    }
+}
+
+em {
+    color: $pink;
+    font-family: $alt-font;
+    font-weight: 600;
+}

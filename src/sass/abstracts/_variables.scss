@@ -1,0 +1,25 @@
+// COLOR PALETTE
+
+$black: #000000;
+$gray: #7D7D7D;
+$pink: #FB607F;
+$white: #FFFFFF;
+
+// VARIABLES
+
+$alt-font: "Playfair Display", georgia, utopia, serif;
+$default-color: #333333;
+$default-font: Raleway, arial, helvetica, sans-serif;
+$default-size: 18px;
+$line-height: 30px;
+$padding: $line-height;
+
+// RESPONSIVE BREAKPOINTS
+
+$breakpoints: (
+	'x-large': (min-width:1200px),
+	'large': (min-width:992px),
+	'medium': (min-width:768px),
+	'small': (min-width:544px),
+	'x-small': (max-width:544px)
+);

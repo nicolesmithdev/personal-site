@@ -1,0 +1,67 @@
+input,
+select,
+textarea {
+    background-color: $white;
+    border: 1px solid #DDD;
+    color: $default-color;
+    font-size: 16px;
+    max-width: 320px;
+    padding: $padding/3;
+    width: 100%;
+}
+
+form button {
+    @include background-gradient($pink, #F93B60);
+    border: 1px solid #F51642;
+    border-radius: 2px;
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.075), inset 0 1px 0 rgba(255,255,255,0.3), 0 1px 2px rgba(0,0,0,0.1);
+	color: $white;
+	cursor: pointer;
+    font-size: 16px;
+	padding: 10px $padding;
+	text-shadow: 0 1px 0 #F51642;
+	width: auto;
+
+	&:hover {
+		border-color: $pink;
+		box-shadow: inset 0 -1px 0 rgba(0,0,0,0.075), inset 0 1px 0 rgba(255,255,255,0.3), 0 1px 2px rgba(0,0,0,0.1), inset 0 0 200px rgba(255, 255, 255, 0.25);
+	}
+}
+
+label {
+    display: block;
+    font-weight: 600;
+}
+
+.form-control {
+    display: block;
+
+    &:not(:last-child) {
+        margin-bottom: $padding/2;
+    }
+
+    .desc {
+        color: $gray;
+        display: block;
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    &.invalid {
+        label {
+            color: red;
+        }
+
+        input {
+            border: 1px solid red;
+        }
+
+        .desc {
+            color: red;
+        }
+    }
+}
+
+.req {
+    color: red;
+}

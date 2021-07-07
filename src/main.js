@@ -8,6 +8,7 @@ Vue.component('Panel', () => import('./components/UI/Panel.vue'));
 
 Vue.use(VueAnalytics, {
   id: 'UA-30012836-1',
+  router,
   debug: {
     sendHitTask: process.env.NODE_ENV === 'production'
   }

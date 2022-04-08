@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col col-1third">
             <img
-                src="../../assets/images/nicole-smith-family.jpg"
+                src="../../assets/images/nicole-smith-family-2.jpg"
                 alt="Nicole Smith family"
                 width="600"
                 height="500"
@@ -21,7 +21,7 @@
             </p>
 
             <p>
-                With 11 years of professional experience, my skillset includes
+                With 12 years of professional experience, my skillset includes
                 HTML, CSS/Sass, Vue.js, (some) React, PHP, MySQL, WordPress, and
                 WooCommerce.
             </p>

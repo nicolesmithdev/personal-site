@@ -22,13 +22,13 @@
 
             <p>
                 With 12 years of professional experience, my skillset includes
-                HTML, CSS/Sass, Vue.js, (some) React, PHP, MySQL, WordPress, and
+                HTML, SCSS, Vue.js, React, PHP, MySQL, WordPress, and
                 WooCommerce.
             </p>
 
             <p>
-                My husband and I are proud parents to twin girls, three
-                bulldogs, and a cat. Hockeytown is where we call home.
+                My husband and I are proud parents to twin girls, two bulldogs,
+                and a cat. Hockeytown is where we call home.
             </p>
         </div>
     </div>

@@ -14,15 +14,15 @@
 
             <p>
                 My name is Nicole Smith (née Boyd) whose favorite color is
-                <em>pink</em>. I am a self-taught front-end web developer
-                specializing in WordPess and Vue.js. My passion for web
-                development started at a young age. I was, and still am,
-                fascinated by how code can bring a website to life.
+                <em>pink</em>. I am a full stack web developer specializing in
+                WordPess and Vue. My passion for web development started at a
+                young age. I was, and still am, fascinated by how code can bring
+                a website to life.
             </p>
 
             <p>
                 With 12 years of professional experience, my skillset includes
-                HTML, SCSS, Vue.js, React, PHP, MySQL, WordPress, and
+                HTML, SCSS, Vue, React, Express, PHP, MySQL, WordPress, and
                 WooCommerce.
             </p>
 

@@ -10,7 +10,7 @@
 import AboutPanel from '../panels/PanelAbout';
 import SkillsPanel from '../panels/PanelSkills';
 import QuotePanel from '../panels/PanelQuote';
-import UsesPanel from '../panels/PanelUses';
+import ProjectsPanel from '../panels/PanelProjects';
 
 export default {
     metaInfo: {
@@ -20,11 +20,11 @@ export default {
         AboutPanel,
         SkillsPanel,
         QuotePanel,
-        UsesPanel,
+        ProjectsPanel,
     },
     data() {
         return {
-            panels: ['About', 'Skills', 'Quote', 'Uses'],
+            panels: ['About', 'Skills', 'Quote', 'Projects'],
         };
     },
 };

@@ -14,9 +14,10 @@
                 </a>
                 <h3>Recipes App</h3>
                 <p>
-                    React web app featuring a collection of recipes based on a
-                    nutrition program, allowing users to filter recipes by
-                    category, container color, dietary needs, and/or source.
+                    MERN (MongoDB, Express, React, Node) web app featuring a
+                    collection of recipes based on a nutrition program, allowing
+                    users to filter recipes by category, container color,
+                    dietary needs, and/or source.
                 </p>
 
                 <div class="btn-group">

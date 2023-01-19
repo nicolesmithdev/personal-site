@@ -10,17 +10,17 @@
                 />
             </router-link>
 
-            <Arrows v-if="isHome" />
+            <IconArrows v-if="isHome" />
         </div>
     </header>
 </template>
 
 <script>
-import Arrows from '../UI/Arrows.vue';
+import IconArrows from '../UI/IconArrows.vue';
 
 export default {
     components: {
-        Arrows,
+        IconArrows,
     },
     computed: {
         isHome() {

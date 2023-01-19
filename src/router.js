@@ -1,23 +1,18 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import Meta from 'vue-meta';
+import { createRouter, createWebHistory } from 'vue-router';
 
-import Home from './components/pages/Home';
+import PageHome from './components/pages/PageHome';
 
-Vue.use(Router);
-Vue.use(Meta);
-
-const router = new Router({
-  mode: 'history',
+const router = createRouter({
+  history: createWebHistory(),
   routes: [
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: PageHome
     },
     {
       path: '/:catchall(.*)',
-      component: Home
+      redirect: { name: 'home' }
     }
   ]
 });
@@ -29,7 +24,6 @@ router.beforeEach(function(to, from, next) {
   if (to.name) {
     document.body.classList.add(to.name);
   }
-
   next();
 });
 

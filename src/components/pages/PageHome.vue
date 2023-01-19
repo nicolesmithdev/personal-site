@@ -1,8 +1,8 @@
 <template>
     <div>
-        <panel v-for="panel in panels" :key="panel" :id="panel.toLowerCase()">
+        <panel-section v-for="panel in panels" :key="panel" :id="panel.toLowerCase()">
             <component :is="panel + 'Panel'" />
-        </panel>
+        </panel-section>
     </div>
 </template>
 
@@ -13,9 +13,6 @@ import QuotePanel from '../panels/PanelQuote';
 import ProjectsPanel from '../panels/PanelProjects';
 
 export default {
-    metaInfo: {
-        titleTemplate: null,
-    },
     components: {
         AboutPanel,
         SkillsPanel,

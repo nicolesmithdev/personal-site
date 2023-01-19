@@ -2,9 +2,13 @@
   <div class="site-container">
     <SiteHeader />
     <div class="content">
-      <transition name="fade" mode="out-in">
-        <router-view></router-view>
-      </transition>
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <keep-alive>
+            <component :is="Component" />
+          </keep-alive>
+        </transition>
+      </router-view>
     </div>
     <SiteFooter />
   </div>
@@ -15,10 +19,6 @@ import SiteHeader from './components/layout/TheHeader.vue';
 import SiteFooter from './components/layout/TheFooter.vue';
 
 export default {
-  metaInfo: {
-    title: 'Nicole Smith, WordPress Web Developer',
-    titleTemplate: '%s | Nicole Smith'
-  },
   components: {
     SiteHeader,
     SiteFooter
@@ -32,7 +32,6 @@ export default {
 <style lang="scss">
 * {
   box-sizing: border-box;
-  // transition: all 0.2s linear;
 }
 
 body, html {

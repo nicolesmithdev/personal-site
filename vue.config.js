@@ -1,4 +1,6 @@
-module.exports = {
+const { defineConfig } = require('@vue/cli-service')
+
+module.exports = defineConfig({
     chainWebpack: (config) => {
         config.plugin('html').tap((args) => {
             args[0].title = 'Nicole Smith | Full Stack Web Developer';
@@ -18,4 +20,4 @@ module.exports = {
             files: ['src/*'],
         },
     },
-};
+});

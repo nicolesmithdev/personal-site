@@ -1,21 +1,14 @@
-import Vue from 'vue';
-import router from './router.js';
-import VueAnalytics from 'vue-analytics';
-
+import { createApp } from 'vue';
+import router from './router';
+import VueGtag from 'vue-gtag';
 import App from './App.vue';
+import PanelSection from './components/UI/PanelSection';
 
-Vue.component('Panel', () => import('./components/UI/Panel.vue'));
+const app = createApp(App);
 
-Vue.use(VueAnalytics, {
-  id: 'UA-30012836-1',
-  router,
-  debug: {
-    sendHitTask: process.env.NODE_ENV === 'production',
-    enabled: process.env.NODE_ENV === 'development'
-  }
-});
+app.component('PanelSection', PanelSection);
 
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount('#app');
+app
+  .use(VueGtag, { config: { id: 'UA-30012836-1' } })
+  .use(router)
+  .mount('#app');

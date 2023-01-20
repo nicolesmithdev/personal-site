@@ -14,25 +14,24 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { onBeforeMount } from 'vue';
+import { useRoute } from 'vue-router';
+import { useHead } from '@vueuse/head';
 import SiteHeader from './components/layout/TheHeader.vue';
 import SiteFooter from './components/layout/TheFooter.vue';
-import { useHead } from '@vueuse/head';
 
-export default {
-  setup() {
-    useHead({
-      titleTemplate: (title) => !title ? 'Nicole Smith, WordPress Web Developer' : `${title} | Nicole Smith`,
-    })
-  },
-  components: {
-    SiteHeader,
-    SiteFooter
-  },
-  beforeCreate() {
-    document.body.classList.add(this.$route.name);
+const route = useRoute();
+
+onBeforeMount(() => {
+  if (route.name) {
+    document.body.classList.add(route.name);
   }
-}
+});
+
+useHead({
+  titleTemplate: (title) => !title ? 'Nicole Smith, WordPress Web Developer' : `${title} | Nicole Smith`,
+});
 </script>
 
 <style lang="scss">

@@ -17,8 +17,14 @@
 <script>
 import SiteHeader from './components/layout/TheHeader.vue';
 import SiteFooter from './components/layout/TheFooter.vue';
+import { useHead } from '@vueuse/head';
 
 export default {
+  setup() {
+    useHead({
+      titleTemplate: (title) => !title ? 'Nicole Smith, WordPress Web Developer' : `${title} | Nicole Smith`,
+    })
+  },
   components: {
     SiteHeader,
     SiteFooter

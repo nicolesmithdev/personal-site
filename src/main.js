@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import { createHead } from '@vueuse/head';
+import { createHead, VueHeadMixin } from '@vueuse/head';
 import router from './router';
 import VueGtag from 'vue-gtag';
 import App from './App.vue';
@@ -11,6 +11,7 @@ const head = createHead();
 app.component('PanelSection', PanelSection);
 
 app
+  .mixin(VueHeadMixin)
   .use(head)
   .use(VueGtag, { config: { id: 'UA-30012836-1' } })
   .use(router)

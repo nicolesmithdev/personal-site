@@ -4,7 +4,7 @@
 
         <div class="row">
             <div class="col col-1third">
-                <a href="https://eattherainbow.recipes/" class="img">
+                <a href="https://etr.nicolesmith.dev/" class="img">
                     <img
                         src="../../assets/images/eat-the-rainbow.png"
                         alt="Eat The Rainbow"
@@ -21,7 +21,7 @@
                 </p>
 
                 <div class="btn-group">
-                    <a href="https://eattherainbow.recipes/"
+                    <a href="https://etr.nicolesmith.dev/"
                         ><i class="fa fa-link"></i> Visit</a
                     >
                     <a href="https://github.com/nicolesmithdev/eat-the-rainbow/"

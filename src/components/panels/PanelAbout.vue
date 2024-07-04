@@ -21,9 +21,10 @@
             </p>
 
             <p>
-                With 12 years of professional experience, my skillset includes
-                HTML, SCSS, Vue, React, Express, PHP, MySQL, WordPress, and
-                WooCommerce.
+                With 13 years of professional experience, my primary skillset
+                includes Vue, HTML, SCSS, PHP, and MySQL. I am currently
+                learning Laravel, and also have some experience with React and
+                Express.
             </p>
 
             <p>

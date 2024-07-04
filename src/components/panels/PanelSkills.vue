@@ -17,16 +17,16 @@ export default {
     data() {
         return {
             skills: [
+                'wordpress',
+                'vue',
                 'html',
                 'css',
                 'javascript',
                 'sass',
-                'vue',
-                'react',
-                'nodejs',
                 'php',
                 'mysql',
-                'wordpress',
+                'laravel',
+                'react',
             ],
         };
     },
